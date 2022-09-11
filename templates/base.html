@@ -6,8 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Django Deploy Git Action | {% block head_title %}{% endblock %}</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+        @layer components{
+            .form-control{
+                @apply w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out;
+            }
+        }
+    </style>
 </head>
-<body class="bg-[#2696a1]">
+<body>
     
     {% block content %}
         
