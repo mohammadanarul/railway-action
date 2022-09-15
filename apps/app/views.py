@@ -1,15 +1,11 @@
 from django.shortcuts import redirect
 from django.views.generic import TemplateView, ListView, CreateView, View
 from django.urls import reverse_lazy
-from app.models import Todo
-from app.forms import TodoForm
+from apps.app.models import Todo
+from apps.app.forms import TodoForm
 
 class HomeView(TemplateView):
     template_name = "app/home.html"
-
-
-class AboutView(TemplateView):
-    template_name = 'app/about.html'
 
 
 class TodoView(CreateView, ListView):

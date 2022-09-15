@@ -1,5 +1,5 @@
 from django.forms import ModelForm, TextInput
-from app.models import Todo
+from apps.app.models import Todo
 
 
 class TodoForm(ModelForm):

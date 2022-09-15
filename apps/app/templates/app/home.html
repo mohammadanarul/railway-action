@@ -3,9 +3,12 @@
 {% block content %}
 <section class="bg-[#2696a1]">
     <div class="h-screen flex items-center justify-center">
-        <div>
+        <div class="text-center">
             <h1 class="text-4xl font-bold">Md Anarul Islam</h1>
-            <p class="mt-2 font-medium">Junior Full Stack Developer.</p>
+            <p class="font-medium">Junior Full Stack Developer.</p>
+            <div class="mt-4">
+                <a href="{% url 'todos' %}" class="py-2 px-4 bg-purple-600 text-white font-medium rounded">Todos</a>
+            </div>
         </div>
     </div>
 </section>
